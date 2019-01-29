@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.JS - Eventi e Metodi</title>
+    <style media="screen">
+        .box {
+            background: green;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{ lezione }}</h1>
+    <h3>{{ counter }}</h3>
+    <br>
+    <button @click="incrementaContatore">Incrementa Contatore</button>
+    <br>
+    <br>
+    <div
+            class="box"
+            @mouseover="overTheBox">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

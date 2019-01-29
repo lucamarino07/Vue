@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.JS - Rendering Condizionale</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>Articolo: {{ prodotto }}</h1>
+    <h3 v-if="quantità > 20">Disponibile</h3>
+    <h3 v-else-if="quantità > 0 && quantità < 20">Disponibilità limitata</h3>
+    <h3 v-else>Articolo Esaurito</h3>
+    <br><br>
+    <h3 v-show="sconti">Articolo in offerta</h3>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

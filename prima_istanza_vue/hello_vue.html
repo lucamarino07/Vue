@@ -5,6 +5,16 @@
     <title>Hello Vue</title>
 </head>
 <body>
+<div id="app">
+    <h1>{{ message }}</h1>
+    <h1>{{ value }}</h1>
+    <h1>{{ value * 5 }}</h1>
+    <h1>{{ Math.random() }}</h1>
+    <img v-bind:src="imgSrc">
+    <a v-bind:href="imgSrc">Link - Clicca Qui</a>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
