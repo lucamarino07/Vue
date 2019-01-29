@@ -48,6 +48,8 @@ Vue.component("to-do", {
             @keyup.enter="submitTask"
             >
         <br>
+        <p>{{ error }}</p>
+        <br>
         <div 
             class="single-task"
             v-for="(task, index) in tasks"
@@ -67,7 +69,7 @@ Vue.component("to-do", {
               </div>
            
         </div>
-        <p>{{ error }}</p>
+        
         <p v-if="amount === 0">Per aggiungere un nuovo task, compila il campo testuale e premi invio!</p>
     </div>
     `
