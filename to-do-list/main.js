@@ -60,7 +60,7 @@ Vue.component("to-do", {
                 > {{task}}
                 <button 
                     type="button" 
-                    class="close"
+                    class="close no-outline"
                     @click="removeTask(task)">
                     <span>&times;</span>
                 </button>
