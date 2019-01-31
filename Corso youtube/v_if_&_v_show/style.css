@@ -1,0 +1,8 @@
+body {
+    margin: 16px;
+}
+
+.no-outline {
+    outline: 0 !important;
+    border-radius: 5%;
+}
